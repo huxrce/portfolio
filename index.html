@@ -33,39 +33,122 @@
     <title>Erica Hu</title>
   </head>
   <body>
-    <nav class="d-flex justify-content-between">
-      <a href="/">
-        <h2>EH</h2>
-      </a>
-      <ul>
-        <li class="active"><a href="/" title="Homepage">Home</a></li>
-        <li><a href="/about.html" title="About me">About</a></li>
-        <li><a href="/work.html" title="My projects">Work</a></li>
-        <li><a href="/contact.html" title="Contact me">Contact</a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <nav class="d-flex justify-content-between d-none d-md-block">
+        <a href="/" class="logo">
+          <h2>EH</h2>
+        </a>
+        <ul class="text-end">
+          <li class="active"><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about.html" title="About me">About</a></li>
+          <li>
+            <a href="/work.html" title="My projects">Work</a>
+          </li>
+          <li><a href="#contact" title="Contact me">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-block d-md-none">
+        <a href="" class="logo"><h2>EH</h2></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li class="active"><a href="/">Homepage</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <div class="hero">
       <h1>Erica Hu</h1>
-      <h4 class="mb-5">Front-end developer based in Europe</h4>
+      <h4 class="mb-5">Front-end developer based in Italy</h4>
       <div>
-        <a href="/about.html" class="btn btn-branding">Contact Me</a>
-      </div>
-    </div>
-    <p class="text-center m-5">Featured below are some of my latest projects</p>
-    <div class="row">
-      <div class="col-lg-6"></div>
-      <div class="col-lg-6 project-description">
-        <h2 class="mb-4">Dictionary Project</h2>
-        <p class="mb-4 text-muted">Coded with</p>
-        <a href="/work.html" target="_blank" class="btn btn-outline"
-          >Learn more</a
+        <a
+          href="https://shecodes-react-dictionary-project.onrender.com/"
+          class="btn btn-branding"
+          >Contact Me</a
         >
       </div>
     </div>
+    <div class="container">
+      <p class="text-center m-5">
+        Featured below are some of my latest projects
+      </p>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <iframe
+            src="https://shecodes-react-dictionary-project.onrender.com/"
+            frameborder="0"
+            width="100%"
+            height="300"
+            class="rounded d-none d-lg-block"
+          >
+          </iframe>
+        </div>
+        <div class="col-lg-6 project-description">
+          <h2 class="mb-4">Dictionary Project</h2>
+          <p class="mb-4 text-muted">
+            Coded with React.js, REST API, and Bootstrap
+          </p>
+          <a href="/work.html" target="_blank" class="btn btn-outline"
+            >See more</a
+          >
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-6 project-description">
+          <h2 class="mb-4">Weather Project</h2>
+          <p class="mb-4 text-muted">
+            Coded with React.js, REST API, and Bootstrap
+          </p>
+          <a
+            href="https://shecodes-react-weather-app.onrender.com/"
+            target="_blank"
+            class="btn btn-outline"
+            >See more</a
+          >
+        </div>
+        <div class="col-lg-6">
+          <iframe
+            src="https://shecodes-react-weather-app.onrender.com/"
+            frameborder="0"
+            width="100%"
+            height="300"
+            class="rounded d-none d-lg-block"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <iframe
+            src="https://shecodes-react-dictionary-project.onrender.com/"
+            frameborder="0"
+            width="100%"
+            height="300"
+            class="rounded d-none d-lg-block"
+          >
+          </iframe>
+        </div>
+        <div class="col-lg-6 project-description">
+          <h2 class="mb-4">AI Poem Generator Project</h2>
+          <p class="mb-4 text-muted">
+            Coded with HTML, CSS, Vanilla JavaScript, and REST API
+          </p>
+          <a href="/work.html" target="_blank" class="btn btn-outline"
+            >See more</a
+          >
+        </div>
+      </div>
+    </div>
     <footer>
-      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+      <div
+        class="contact-box justify-content-between mt-5 mb-5 d-none d-md-flex"
+      >
         <div>
-          <h3>Work Inquiry</h3>
+          <h3>Get in Touch</h3>
           <p class="text-muted">Let's work together</p>
         </div>
         <div>
@@ -77,7 +160,7 @@
           >
         </div>
       </div>
-      <div class="d-flex justify-content-center mb-5">
+      <div class="d-flex justify-content-center mb-5 d-block d-md-none">
         <a
           href="mailto:its.erica.hu@gmail.com"
           class="email-link"
@@ -85,7 +168,10 @@
           >its.erica.hu@gmail.com</a
         >
       </div>
-      <div class="social-links d-flex justify-content-center mb-5 pb-5">
+      <div
+        id="contact"
+        class="social-links d-flex justify-content-center mb-5 pb-5"
+      >
         <a
           href="https://github.com/huxrce"
           target="_blank"
@@ -95,7 +181,7 @@
         <a
           href="https://www.linkedin.com/in/ericahu260699"
           target="_blank"
-          title="Linkedin account"
+          title="LinkedIn account"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
         <a href="https://x.com/ericahu" target="_blank" title="Twitter account"
